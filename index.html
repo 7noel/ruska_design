@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shorcut icon" href="loguito.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>RUSKA</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+body {
+  /*opacity: 0.5;*/
+	/*filter: alpha(opacity=60);*/
+  background: rgb(195,195,195,1) url('tapiz.jpg') repeat  center center;
+  background-size: auto;
+}
+.container{
+	padding-top: 20px;
+	/*filter: alpha(opacity=60);*/
+}
+.title{
+	margin-bottom: 20px;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #000;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+		
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="card col-sm-10 offset-sm-1">
+				<form action="#" id="form_datos" class="offset-md-1">
+					<div class="offset-md-1">
+						<h3 class="title"> COTIZADOR DE SEGURO VEHICULAR</h3>
+					</div>
+					<div class="form-group row">
+						<label for="marca" class="col-sm-2 col-form-label">Marca</label>
+						<div class="col-sm-3">
+							<select name="marca" class="custom-select" id="marca" >
+								<option value="">Seleccionar</option>
+								<option value='CHERY'>CHERY</option>
+								<option value='CHEVROLET'>CHEVROLET</option>
+								<option value='CHRYSLER'>CHRYSLER</option>
+								<option value='CHUNZHOU'>CHUNZHOU</option>
+								<option value='CITROEN'>CITROEN</option>
+								<option value='DAEWOO'>DAEWOO</option>
+								<option value='DAIHATSU'>DAIHATSU</option>
+								<option value='DATSUN'>DATSUN</option>
+								<option value='DIM'>DIM</option>
+								<option value='DODGE'>DODGE</option>
+								<option value='DONGFENG'>DONGFENG</option>
+								<option value='EAGLE'>EAGLE</option>
+								<option value='FAW'>FAW</option>
+								<option value='FERRARI'>FERRARI</option>
+								<option value='FIAT'>FIAT</option>
+								<option value='FORD'>FORD</option>
+								<option value='FORLAND'>FORLAND</option>
+								<option value='FOTON'>FOTON</option>
+								<option value='FREIGHTLINER'>FREIGHTLINER</option>
+								<option value='GEELY'>GEELY</option>
+								<option value='GEO'>GEO</option>
+								<option value='GMC'>GMC</option>
+								<option value='GONOW'>GONOW</option>
+								<option value='GREAT WALL'>GREAT WALL</option>
+								<option value='GURGEL'>GURGEL</option>
+								<option value='HAFEI'>HAFEI</option>
+								<option value='HAIMA'>HAIMA</option>
+								<option value='HILLMAN'>HILLMAN</option>
+								<option value='HINO'>HINO</option>
+								<option value='HONDA'>HONDA</option>
+								<option value='HOWO'>HOWO</option>
+								<option value='HUMMER'>HUMMER</option>
+								<option value='HYUNDAI'>HYUNDAI</option>
+								<option value='INTERNATIONAL'>INTERNATIONAL</option>
+								<option value='ISUZU'>ISUZU</option>
+								<option value='IVECO'>IVECO</option>
+								<option value='JAC'>JAC</option>
+								<option value='JAGUAR'>JAGUAR</option>
+								<option value='JEEP'>JEEP</option>
+								<option value='JINBEI'>JINBEI</option>
+								<option value='JMC'>JMC</option>
+								<option value='KAMAZ'>KAMAZ</option>
+								<option value='KENWORTH'>KENWORTH</option>
+								<option value='KIA'>KIA</option>
+								<option value='KING LONG'>KING LONG</option>
+								<option value='LADA'>LADA</option>
+								<option value='LAND ROVER'>LAND ROVER</option>
+								<option value='LANDWIND'>LANDWIND</option>
+								<option value='LEXUS'>LEXUS</option>
+								<option value='LIFAN'>LIFAN</option>
+								<option value='LINCOLN'>LINCOLN</option>
+								<option value='MACK'>MACK</option>
+								<option value='MAHINDRA'>MAHINDRA</option>
+								<option value='MASERATI'>MASERATI</option>
+								<option value='MAZDA'>MAZDA</option>
+								<option value='MERCEDES BENZ'>MERCEDES BENZ</option>
+								<option value='MERCURY'>MERCURY</option>
+								<option value='MG'>MG</option>
+								<option value='MINI'>MINI</option>
+								<option value='MINKS'>MINKS</option>
+								<option value='MITSUBISHI'>MITSUBISHI</option>
+								<option value='NISSAN'>NISSAN</option>
+								<option value='OLDSMOBILE'>OLDSMOBILE</option>
+								<option value='OPEL'>OPEL</option>
+								<option value='PEUGEOT'>PEUGEOT</option>
+								<option value='PIAGGIO'>PIAGGIO</option>
+								<option value='PLYMOUTH'>PLYMOUTH</option>
+								<option value='POLSKY FIAT'>POLSKY FIAT</option>
+								<option value='PONTIAC'>PONTIAC</option>
+								<option value='PORSCHE'>PORSCHE</option>
+								<option value='RENAULT'>RENAULT</option>
+								<option value='SAMSUNG'>SAMSUNG</option>
+								<option value='SATURN'>SATURN</option>
+								<option value='SCANIA'>SCANIA</option>
+								<option value='SCION'>SCION</option>
+								<option value='SEAT'>SEAT</option>
+								<option value='SHIFENG'>SHIFENG</option>
+								<option value='SINOTRUCK'>SINOTRUCK</option>
+								<option value='SMART'>SMART</option>
+								<option value='SSANGYONG'>SSANGYONG</option>
+								<option value='SUBARU'>SUBARU</option>
+								<option value='SUZUKI'>SUZUKI</option>
+								<option value='TAVRIA'>TAVRIA</option>
+								<option value='TOYOTA'>TOYOTA</option>
+								<option value='TRAILMOBILE'>TRAILMOBILE</option>
+								<option value='TRIUMPH'>TRIUMPH</option>
+								<option value='TUBULAR'>TUBULAR</option>
+								<option value='VOLKSWAGEN'>VOLKSWAGEN</option>
+								<option value='VOLVO'>VOLVO</option>
+								<option value='WUYANG'>WUYANG</option>
+								<option value='YAMAHA'>YAMAHA</option>
+								<option value='YUGO'>YUGO</option>
+								<option value='ZOTYE'>ZOTYE</option>
+
+							</select>
+						</div>
+								
+						<label for="modelo" class="col-sm-2 col-form-label">Modelo</label>
+						<div class="col-sm-3">
+							<select name="modelo" class="form-control" id="modelo" >
+								<option value="">Seleccionar</option>
+								<option value="Modelo1">Modelo1</option>
+								<option value="Modelo2">Modelo2</option>
+								<option value="Modelo3">Modelo3</option>
+								<option value="Modelo4">Modelo4</option>
+								<option value="Modelo5">Modelo5</option>
+								<option value="Modelo6">Modelo6</option>
+								<option value="Modelo7">Modelo7</option>
+								<option value="Modelo8">Modelo8</option>
+								<option value="Modelo9">Modelo9</option>
+							</select>
+						</div>
+							
+					</div>
+					<div class="form-group row">
+						<label for="fabricacion" class="col-sm-2 col-form-label">Fabricación</label>
+						<div class="col-sm-3">
+							<select name="fabricacion" class="form-control" id="fabricacion" >
+								<option value="">Seleccionar</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+							</select>
+						</div>
+						<label for="value" class="col-sm-2 col-form-label">Valor (US$)</label>
+						<div class="col-sm-3">
+							<input type="number" class="form-control" id="value" placeholder="Valor Asegurado" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="placa" class="col-sm-2 col-form-label">Placa</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="placa" placeholder="ABC-123" >
+						</div>
+						<label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="nombre" placeholder="Nombre" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="celular" class="col-sm-2 col-form-label">Celular</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="celular" placeholder="celular" >
+						</div>
+						<label for="email" class="col-sm-2 col-form-label">Correo</label>
+						<div class="col-sm-3">
+							<input type="email" class="form-control" id="email" placeholder="email" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="custom-control custom-checkbox offset-sm-2">
+							<input type="checkbox" class="custom-control-input" id="more">
+							<label class="custom-control-label" for="more">Más Opciones</label>
+						</div>
+					</div>
+					<div id="moreOptions">
+						<div class="form-group row">
+							<label for="uso" class="col-sm-2 col-form-label">Tipo de Uso</label>
+							<div class="col-sm-3">
+								<select name="uso" class="form-control" id="fabricacion">
+									<option value="alquiler">Alquiler</option>
+									<option value="brevete">Brevete</option>
+									<option value="carga">Carga</option>
+									<option value="comercial">Comercial</option>
+									<option value="escolar">Escolar</option>
+									<option value="exhibicion">Exhibición</option>
+									<option value="particular" selected>Particular</option>
+									<option value="interprovincial">Interprovincial</option>
+									<option value="taxi/urbano">Taxi/Urbano</option>
+									<option value="tranporte_personal">Transporte de personal</option>
+									<option value="tranporte_urbano">Transporte Urbano</option>
+									<option value="traslado">Traslado</option>
+									<option value="tranporte_turistico">Transporte Turístico</option>
+								</select>
+							</div>
+							<label for="region" class="col-sm-2 col-form-label">Región</label>
+							<div class="col-sm-3">
+								<select name="region" class="form-control" id="region">
+									<option value="Lima">Lima</option>
+									<option value="Norte">Norte</option>
+									<option value="Sur">Sur</option>
+								</select>
+							</div>
+						</div>
+						
+					</div>
+					<button type="submit" class="btn btn-primary offset-sm-1">Buscar Cotización</button>
+
+				</form>
+				
+				<div class="" id="seguros">
+					<h3 id="label" class="title"></h3>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-2 offset-lg-1">
+							<div class="card text-center">
+								<img class="card-img-top" src="Rimac.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">USD 200.00</h5>
+									<a href="#" class="btn btn-primary">Cotizar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<div class="card text-center">
+								<img class="card-img-top" src="Pacifico.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Plan Básico</h5>
+									<h5 class="card-title">USD 200.00</h5>
+									<h5 class="card-title">Plan Vip</h5>
+									<h5 class="card-title">USD 200.00</h5>
+									<a href="#" class="btn btn-primary">Cotizar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<div class="card text-center">
+								<img class="card-img-top" src="Mapfre.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">USD 200.00</h5>
+									<a href="#" class="btn btn-primary">Cotizar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<div class="card text-center">
+								<img class="card-img-top" src="HDI_nuevo.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">USD 200.00</h5>
+									<a href="#" class="btn btn-primary">Cotizar</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<div class="card text-center">
+								<img class="card-img-top" src="La_Positiva.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">USD 200.00</h5>
+									<a href="#" class="btn btn-primary">Cotizar</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<button type="button" class="btn btn-default offset-lg-1" id="back"><< Volver</button>
+				</div>
+				<div id="fin">
+						<div class="card-body">
+						<h5 class="card-title">Felicitaciones</h5>
+						<p class="card-text" id="message">Se generó la cotización N° 24355. En breve le enviaremos un correo electrónica a <span id="spanEmail"></span> con su cotización.</p>
+						</div>
+				</div>
+				<div id="loader" class="row justify-content-center">
+					<div class="lds-facebook align-middle"><div></div><div></div><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$("#seguros").hide()
+			$("#moreOptions").hide()
+			// $("#form_datos").hide()
+			$("#loader").hide()
+			$("#fin").hide()
+			$("#form_datos").submit(function (e) {
+				e.preventDefault();
+				$("#form_datos").hide()
+				$("#loader").show()
+				setTimeout(function () {
+					$("#loader").hide()
+					$("#seguros").show()
+				}, 3000)
+			})
+			$("#back").click(function (e) {
+				e.preventDefault();
+				$("#seguros").hide()
+				$("#form_datos").show()
+			})
+			$("#more").click(function (e) {
+				if (document.getElementById("more").checked == true) {
+					$("#moreOptions").show()
+				} else {
+					$("#moreOptions").hide()
+				}
+			})
+			$("#seguros a").click(function (e) {
+				e.preventDefault()
+				$("#spanEmail").text($("#email").val())
+				$("#seguros").hide()
+				$("#form_datos").hide()
+				$("#loader").show()
+				setTimeout(function () {
+					$("#loader").hide()
+					$("#fin").show()
+					setTimeout(function () {
+						location.reload(true);
+					}, 6000)
+				}, 1000)
+				// alert("Se generó la cotización N° 24355. En breve le enviaremos un correo con su cotización")
+			})
+
+			$("#marca, #modelo, #fabricacion, #value").change(function (ev) {
+				$("#label").text($("#marca").val() + " " + $("#modelo").val() + " " + $("#fabricacion").val() + " USD" + $("#value").val())
+			})
+		})
+
+	</script>
+</body>
+</html>
